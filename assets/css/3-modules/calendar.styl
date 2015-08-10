@@ -1,0 +1,92 @@
+h1, h3
+  font-size: 60px
+  font-weight: 300
+  text-align: center
+
+.calendar
+  margin: 50px auto
+  max-width: 500px
+
+.header
+  display: flex
+  padding-bottom: 10px
+
+  .date
+    font-size: 90px
+    border: 2px solid white
+    width: 100px
+    height: @width
+    line-height: @height
+    padding: 20px
+    text-align: center
+    border-radius: 50%
+    margin: 0
+
+  .weekday
+    height: 140px
+    line-height: @height
+    margin: 0 30px
+
+  .btn-done
+    font-size: 40px
+    width: 80px
+    height: @width
+    line-height: @height
+    text-align: center
+    border-radius: 50%
+    color: white
+    align-self: center
+    transition: all .3s ease-in-out
+    cursor: pointer
+    &:hover
+        background: gray
+
+.month-nav
+  display: flex
+  justify-content: space-between
+
+  .btn-prev, .btn-next
+    font-size: 40px
+    width: 80px
+    height: @width
+    line-height: @height
+    text-align: center
+    border-radius: 50%
+    background: black
+    color: white
+    align-self: center
+    transition: all .3s ease-in-out
+    cursor: pointer
+
+    &:hover
+      background: #373737
+
+.day-numbers
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+  h3
+    cursor: pointer
+    font-size: 18px
+    margin: 5px
+    width: 55px
+    height: @width
+    line-height: @height
+    border-radius: 50%
+    transition: all .2s ease-in-out
+
+    &:hover
+      background: gray
+
+  hr
+    width: 500px
+    margin: 10px auto
+
+.today
+  border: 1px solid white
+
+.done
+  background-color: #ccc
+  &:hover
+    background: #999
